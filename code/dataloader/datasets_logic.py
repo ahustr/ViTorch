@@ -14,9 +14,9 @@ from PySide2.QtCore import QObject, Slot, Signal, QPropertyAnimation
 from PySide2.QtWidgets import QApplication, QMessageBox, QWidget, QFileDialog
 from PySide2.QtWebChannel import QWebChannel
 
-from VIXorch.Xlib.datasets_ui import Ui_Form
-from VIXorch.XThread import XThread
-from VIXorch.XprogressDialog import download_rate
+from ViTorch.code.dataloader.Xlib.datasets_ui import Ui_Form
+from ViTorch.code.dataloader.XThread import XThread
+from ViTorch.code.dataloader.XprogressDialog import download_rate
 
 class Xpy_js(QObject):
     """
