@@ -32,7 +32,6 @@ class Xpy_js(QObject):
         # 交互对象接收到js调用后执行的py回调函数.
         self.receive_data_from_js_callback = None
 
-    # list表示接收list类型的信号,信号是从js发出的.可以出传递的参数类型有很多种：str、int、list、object、float、tuple、dict等等
     @Slot(list)
     def receive_data_from_js(self, list):
         print('收到前端data: ', list)
@@ -72,7 +71,7 @@ class XDatasets(QWidget):
         self.Xpyforjs = Xpy_js(self)  # 实例化QWebChannel的前端处理对象
         self.Xpyforjs.receive_data_from_js_callback = self.receive_data_from_js     #py对前端返回的数据处理函数
         self.webchannel = QWebChannel(self.ui.webEngineView.page())
-        self.webchannel.registerObject('Xpyforjs', self.Xpyforjs)  # 将前端处理对象在前端页面中注册为名PyHandler对象，此对象在前端访问时名称即为PyHandler'
+        self.webchannel.registerObject('Xpyforjs', self.Xpyforjs)  # 将前端处理对象在前端页面中注册为名Xpyforjs
         self.ui.webEngineView.page().setWebChannel(self.webchannel)  # 挂载前端处理对象
 
     def receive_data_from_js(self,url_list):
@@ -81,8 +80,6 @@ class XDatasets(QWidget):
             dirpath = os.getcwd() + '\\XDatasets\\' + url_list[0]
             os.makedirs(dirpath, exist_ok=True)
             for url in url_list[1:]:
-            # for i in range(2):
-            #     url = 'https://data.mendeley.com/public-files/datasets/tywbtsjrjv/files/d5652a28-c1d8-4b76-97f3-72fb80f94efc/file_downloaded'
                 print(url)
                 thread = XThread(lambda :self.download_link(thread,dirpath,url))
                 thread.str_float.connect(self.dialog_update)
