@@ -56,7 +56,7 @@ class XDatasets(QWidget):
         self.timer_yolo_predict = QtCore.QTimer()
         self.camera = cv2.VideoCapture()
         self.timer_camera.timeout.connect(lambda: self.camera_show(self.camera, self.ui.label_camera))
-
+        self.ui.webEngineView.setUrl(QUrl(u"file:///./Xlib/html/datasets_firstdemo.html"))
         self.ui.webEngineView.loadStarted.connect(lambda: self.ui.label.setText("正在加载..."))
         self.ui.webEngineView.loadFinished.connect(lambda: self.init_slide(self.height() - 1, 50))
         self.ui.btn_slide.clicked.connect(self.menu_slide)
