@@ -147,7 +147,6 @@ class Ui_Form(object):
         self.webEngineView.setFont(font2)
         self.webEngineView.setAutoFillBackground(False)
         self.webEngineView.setStyleSheet(u"border:None;")
-        self.webEngineView.setUrl(QUrl(u"file:///X:/XHOS_py/XOS_Surface/VIXorch/Xlib/html/datasets_firstdemo.html"))
         self.webEngineView.setZoomFactor(1.000000000000000)
         self.splitter.addWidget(self.webEngineView)
         self.label = QLabel(self.splitter)
