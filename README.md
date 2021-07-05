@@ -8,7 +8,12 @@ Python >= 3.6.0 required with all [requirements.txt](https://github.com/ultralyt
 $ git clone https://github.com/software-homework-team/ViTorch.git
 $ cd ViTorch/code
 $ pip install -r requirements.txt
-$ sh run.py
+```
+
+run the code with
+
+```shell
+$ sh run.sh
 ```
 
 ## document when designing
