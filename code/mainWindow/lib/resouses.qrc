@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="新前缀">
+    <file>images/picture.png</file>
+    <file>images/sky_cloud.jpg</file>
+    <file>images/F.png</file>
+    <file>images/C.png</file>
+    <file>images/P.png</file>
+    <file>images/B.png</file>
+    <file>images/M.png</file>
+    <file>images/D.png</file>
+    <file>images/L.png</file>
+    <file>images/A.png</file>
+  </qresource>
+</RCC>
