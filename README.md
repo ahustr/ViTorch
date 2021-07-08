@@ -48,10 +48,10 @@ $ sh run.sh
 
 ## document when designing
 
-[可行性分析报告](.\document\可行性分析.md)
+[可行性分析报告](document\可行性分析.md)
 
-[软件设计说明书](.\document\软件设计.md)
+[软件设计说明书](document\软件设计.md)
 
-[软件测试说明书](.\document\软件测试.md)
+[软件测试说明书](document\软件测试.md)
 
 [需求分析报告](./document/需求分析.md)
