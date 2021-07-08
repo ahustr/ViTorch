@@ -70,5 +70,5 @@ ViTorch以图形化界面为工具,通过图形编辑实现对神经网络的编
 
 ![data_class](data_class.jpg)
 
-从时序图中提取类，
+
 
