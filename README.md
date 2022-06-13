@@ -15,7 +15,7 @@ run the code with
 ```shell
 $ sh run.sh
 ```
-
+团队开发
 运行成功后将弹出ViTorch欢迎界面窗口,窗口上边从左到右分别是菜单按钮,各类网络层,和数据集按钮.![主界面](README.assets/%E4%B8%BB%E7%95%8C%E9%9D%A2.png)
 
 点击菜单按钮,左侧弹出界面选择拦,有Desinger和Train两个选项.
